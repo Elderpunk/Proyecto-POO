@@ -9,6 +9,5 @@ export function mostrarAlumno(ficha) {
     <h3>${ficha.getNombre()}</h3>
     <h5>Edad del alumno: ${ficha.getEdad()}Años.</h5>
     `
-    // agregar como hijo de curso
     fichaAlumno.appendChild(card)
 }

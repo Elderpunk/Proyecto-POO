@@ -4,7 +4,6 @@ import { mostrarCurso } from './mostrarCurso.js'
 import { Alumnos } from './Alumnos.js'
 import { mostrarAlumno } from './mostrarAlumno.js'
 
-
 // acceder al elemento de HTML
 const formulario = document.getElementById('formulario')
 
@@ -27,7 +26,7 @@ formulario.addEventListener('submit', evento => {
     formObtenido.reset()
 })
 
-//acceder al formulario de html
+//acceder al formulario de html Alumnos
 
 const formAlumnos = document.getElementById('formAlumnos')
 
@@ -42,3 +41,4 @@ formAlumnos.addEventListener('submit', evento => {
 
     formObtenido.reset()
 })
+////////////////////////////////////////////
