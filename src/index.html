@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Proyecto POO </title>
+        <link
+            rel="stylesheet"
+            href="../node_modules/normalize.css/normalize.css"
+        />
+        <link rel="stylesheet" href="./css/estilos.css" />
+    </head>
+    <body>
+        <main>
+            <h1 id="titulo" class="titulo">CENTRO DE ESTUDIOS</h1>
+
+            <!-- FORMULARIO -->
+            <form id="formulario">
+                <label>
+                    Nombre:
+                    <input type="text" name="nombreCurso" required />
+                </label>
+                <label>
+                    Imagen:
+                    <input type="text" name="rutaImagen" required />
+                </label>
+                <label>
+                    Horas:
+                    <input type="number" name="cantidadHoras" required />
+                </label>
+                <button type="submit">Nuevo Curso</button>
+            </form>
+
+            <!--FORMULARIO PARA ALUMNOS-->
+            <h1 id="matriculaAlumno" class="matriculaAlumno">ALUMNOS 2021</h1>
+            <form id="formAlumnos" class="formAlumnos">
+                <label>
+                    Nombre del alumno:
+                    <input type="text" name="nombreAlumno" required />
+                </label>
+                <label>
+                    Foto del alumno:
+                    <input type="text" name="fotoAlumno" required />
+                </label>
+                <label>
+                    Edad del alumno 
+                    <input type="number" name="edad" required />
+                </label>
+                <button type="submit">Nuevo alumno</button>
+            </form>
+            <!--FORMULARIO PROFESORES -->
+            <h1 id="nuevoProfesor" class="nuevoProfesor"> PROFESORES 2021</h1>
+            <form id="formProfesor" class="formProfesor">
+                <label>
+                    Nombre del profesor:
+                    <input type="text" name="nombreProfesor" required />
+                </label>
+                <label>
+                    Foto del profesor:
+                    <input type="text" name="fotoProfesor" required />
+                </label>
+                <label>
+                    Asignatura:
+                    <input type="text" name="asignatura" required />
+                </label>
+                <button type="submit">Nuevo Profesor</button>
+            </form>
+            <!-- GRID de Cursos -->
+            <section id="curso" class="cursos"></section>
+            <!--GRID Alumnos-->
+            <section id="alumnos" class="alumnos"></section>
+            <!--GRID Profesores-->
+            <section id="profesor" class="profesor"></section>
+        </main>
+
+        <script type="module" src="./js/index.js"></script>
+    </body>
+</html>
