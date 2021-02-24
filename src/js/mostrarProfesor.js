@@ -1,13 +1,13 @@
-const fichaProfesor = document.getElementById('profesor')
+const elemProfesor = document.getElementById('profesor')
 
-export function mostrarProfesor(qprofesor) {
+export function mostrarProfesor(ficha) {
     // crear un nuevo elemento card
     const card = document.createElement('div')
     card.classList.add('card')
     card.innerHTML = `
-    <img src="${qprofesor.getPoster()}"/>
-    <h3>${qprofesor.getNombre()}</h3>
-    <h5>Especialidad: ${qprofesor.getClases()}</h5>
+    <img src="${ficha.getFoto()}"/>
+    <h3>${ficha.getNombre()}</h3>
+    <h5>Profesor de ${ficha.getCurso()}.</h5>
     `
-    fichaProfesor.appendChild(card)
+    elemProfesor.appendChild(card)
 }

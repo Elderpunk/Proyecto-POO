@@ -3,6 +3,8 @@ import { Cursos } from './Cursos.js'
 import { mostrarCurso } from './mostrarCurso.js'
 import { Alumnos } from './Alumnos.js'
 import { mostrarAlumno } from './mostrarAlumno.js'
+import { Profesores } from './Profesores.js'
+import { mostrarProfesor } from './mostrarProfesor.js'
 
 // acceder al elemento de HTML
 const formulario = document.getElementById('formulario')
@@ -42,3 +44,18 @@ formAlumnos.addEventListener('submit', evento => {
     formObtenido.reset()
 })
 ////////////////////////////////////////////
+//acceder al formulario de html Alumnos
+
+const formProfesor = document.getElementById('formProfesor')
+
+formProfesor.addEventListener('submit', evento => {
+    evento.preventDefault()
+
+    const formObtenido = evento.target
+
+    const Profesor = new Profesores(formObtenido.nombreProfesor.value, formObtenido.fotoProfesor.value, formObtenido.nombreCurso.value)
+    
+    mostrarProfesor(Profesor)
+
+    formObtenido.reset()
+})
