@@ -44,7 +44,7 @@ formAlumnos.addEventListener('submit', evento => {
     formObtenido.reset()
 })
 ////////////////////////////////////////////
-//acceder al formulario de html Alumnos
+//acceder al formulario de html Profesores
 
 const formProfesor = document.getElementById('formProfesor')
 
